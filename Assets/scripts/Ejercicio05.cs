@@ -17,8 +17,17 @@ public class Ejercicio05 : MonoBehaviour
 
     void Start()
     {
-        int resultado = num1/num2;
-        Debug.Log(num1+"/"+num2+" = "+resultado+".");
+        if (num2 != 0)
+        {
+            int resultado = num1 / num2;
+            Debug.Log(num1 + "/" + num2 + " = " + resultado + ".");
+        }
+
+        else
+        {
+            Debug.Log("No se puede dividir por cero");
+        }
+       
     }
 
     // Update is called once per frame
