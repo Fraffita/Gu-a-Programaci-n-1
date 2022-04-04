@@ -10,11 +10,46 @@ public class Ejercicio08 : MonoBehaviour
     //valor de la variable “dia”. Si el día no está en el rango permitido debe emitir por pantalla el
     //mensaje de error "El día ingresado no es válido".
 
-    public string dia;
+    public int numDia;
 
     void Start()
     {
-        
+        switch (numDia)
+        {
+            case 1:
+                Debug.Log("Domingo");
+                break;
+
+            case 2:
+                Debug.Log("Lunes");
+                break; 
+
+            case 3:
+                Debug.Log("Martes");
+                break;
+
+            case 4:
+                Debug.Log("Miércoles");
+                break;
+
+            case 5:
+                Debug.Log("Jueves");
+                break;
+
+            case 6:
+                Debug.Log("Viernes");
+                break;
+
+            case 7:
+                Debug.Log("Sabado");
+                break;
+
+            default:
+                Debug.Log("El día ingresado no es válido");
+                break;
+
+            
+        }
     }
 
     // Update is called once per frame
